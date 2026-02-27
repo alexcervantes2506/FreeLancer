@@ -33,6 +33,13 @@ body{
     background-color: var(--secundario);
 }
 .navegacion-principal{
-    
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
 
+.navegacion-principal a{
+   
+    color: var(--blanco);
+    text-decoration: none;
 }
