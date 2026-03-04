@@ -7,7 +7,7 @@
 
     
 }
-
+/*globales*/
 html{
     font-size: 62.5%;
   box-sizing: border-box;
@@ -20,7 +20,42 @@ html{
 body{
     font-size: 16px;/* 1rem = 10px*/
     font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top,#DFE9F3 0%,var(--blanco) 100%);
 }
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(10,10,10,0.75);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(10,10,10,0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(10,10,10,0.75); 
+    background-color: var(--blanco); 
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    width: 90%;   
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+
+/*tipografia*/
 h1{
      font-size: 3.8rem;   
 }
@@ -33,14 +68,11 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
+/*Titulos*/
 .titulo span{
     font-size: 2rem;
 }
-.contenedor{
-    max-width: 120rem;
-    margin:0 auto;
-
-}
+/*nav principal*/
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -78,13 +110,15 @@ h1,h2,h3{
 @media (min-width: 768px) {
     
 }
-
+/*hero*/
 .hero{
     background-image: url(../IMG/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
+    
 
 }
 .contenido-hero{
@@ -105,6 +139,13 @@ h1,h2,h3{
 .contenido-hero p{
     color: var(--blanco);
     
+}
+/*Servicios*/
+@media (min-width: 768px) {
+    .servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 }
 
 /*
